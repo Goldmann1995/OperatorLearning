@@ -1,0 +1,19 @@
+[project]
+name = "operatorlearning"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "wandb",
+    "ruamel-yaml",
+    "zencfg",
+    "configmypy",
+    "tensorly",
+    "tensorly-torch",
+    "matplotlib",
+    "numpy>=1.25",
+    "opt-einsum",
+    "h5py",
+    "zencfg>=0.3.0",
+]

@@ -1,0 +1,112 @@
+# 创建全面的.gitignore
+@"
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Training data and models - 非常重要！
+data/
+outputs/
+checkpoints/
+logs/
+*.pt
+*.pth
+*.pkl
+*.pickle
+*.npz
+*.npy
+*.h5
+*.hdf5
+
+# 编译的库文件 - 非常重要！
+*.dll
+*.pyd
+*.so
+*.dylib
+*.lib
+*.exe
+
+# 大型数据文件
+*.obj
+*.tgz
+*.zip
+*.tar.gz
+
+# 特定的大文件
+bezierTools.c
+hdf5.dll
+*_multiarray_umath*
+*_simd*
+libscipy_openblas*
+*_avif*
+*_imaging*
+*_pydantic_core*
+*_core*
+*_sparsetools*
+cublas64_12.dll
+cublasLt64_12.dll
+cudnn_*
+cufft64_11.dll
+cupti64_*
+curand64_10.dll
+cusolver64_11.dll
+cusparse64_12.dll
+nvJitLink_*
+nvperf_host.dll
+nvrtc64_*
+torch_cpu.dll
+torch_cuda.dll
+wandb-core
+
+# 其他大文件
+Indian_pines_corrected.npy
+Kinetic.npy
+burgers_*.pt
+darcy_*.pt
+mini_car.pt
+nonlinear_poisson.obj
+"@ | Out-File -FilePath .gitignore -Encoding utf8
